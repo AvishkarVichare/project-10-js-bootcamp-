@@ -207,3 +207,134 @@ nav{
     position: absolute;
     right: 0;
 }
+
+
+
+/* burger  */
+
+.burger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 50px;
+}
+.burger>div{
+    height: 3px;
+    width: 25px;
+    background-color: #ffffff;
+}
+
+/* responsiveness  */
+
+
+@media screen and (max-width:1200px) {
+
+    .logo>h1{
+        font-size: 2rem;
+    }
+    .call-us>div {
+        font-size: 18px;
+    }
+
+    .nav-list>li {
+        font-size: 16px;
+        margin: 0 20px;
+    }
+    
+    .left>h1{
+        font-size: 3.5rem;
+    }
+    .btn{
+        font-size: 25px;
+    }
+    .card{
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width:950px) {
+    
+    .burger{
+        display: flex;
+        /* position: absolute; */
+        /* right: 0; */
+    }
+    .nav-list{
+        width: 500px;
+        justify-content: flex-end;
+        /* position:relative; */
+    }
+    .logo>h1 {
+        font-size: 1.8rem;
+    }
+    .call-us{
+    }
+    .nav-link{
+        display: none;
+    }
+    .left>h1 {
+        font-size: 2.8rem;
+        margin-left: 0;
+    }
+    .card {
+        font-size: 15px;
+    }
+    .puzzle {
+        top: 18px;
+        right: 64px;
+    }
+    .bulb {
+        top: 301px;
+        right: 244px;
+    }
+    .btn{
+        margin-top: 45px;;
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:550px){
+    .logo>h1 {
+        font-size: 20px;
+    }
+    nav{
+        padding: 0 25px;
+    }
+    .nav-list{
+        padding: 25px 0;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .card{
+        width: 150px;
+        font-size: 12px;
+    }
+    .puzzle{
+       
+            top: 30px;
+            right: -100px;
+    
+    }
+    .bulb{
+        top: 220px;
+        right: -15px;
+    }
+    .left{
+        margin: 0 25px;
+    }
+    .call-us>img {
+        height: 30px;
+    }
+    .call-us>div {
+        font-size: 15px;
+    }
+    .btn {
+        margin-top: 34px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}
